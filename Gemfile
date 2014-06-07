@@ -3,6 +3,7 @@ ruby '2.1.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
+gem 'therubyracer', '0.10.2'
 # Use sqlite3 as the database for Active Record
 group :development, :test do
     gem 'sqlite3', '1.3.8'
