@@ -11,7 +11,11 @@ describe "StaticPages" do
     end
     it "should have the title 'Home'" do
       visit '/static_pages/home'
-      expect(page).to have_title('Ruby on Rails Tutorial SecondApp | Home')
+      expect(page).to have_title('Ruby on Rails Tutorial SecondApp')
+    end
+    it "should have the title 'Home'" do
+      visit '/static_pages/home'
+      expect(page).not_to have_title('| Home')
     end
   end
   describe "Help page" do
